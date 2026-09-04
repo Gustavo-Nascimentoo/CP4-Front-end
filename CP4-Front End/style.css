@@ -22,7 +22,7 @@
 
 .banner-1 {
     grid-area: a;
-    max-height: 640x;
+    max-height: 640px;
 }
 
 .banner-2 {
@@ -104,4 +104,115 @@ button:hover{
 .sea .img:hover {
     transform: scale(1.05);
     filter: grayscale(0);
+}
+
+@media (max-width: 1024px) {
+    .banner {
+        padding: 60px 15px;
+    }
+
+    .banner_container {
+        max-width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 320px auto 160px;
+        grid-template-areas:
+            "a a a"
+            "e e e"
+            "b c d";
+        gap: 12px;
+    }
+
+    .banner-1 {
+    max-height: 320px;
+    }
+
+    .banner-2,
+    .banner-3,
+    .banner-4 {
+    max-height: 160px;
+    }
+
+    .h1 {
+        grid-area: e;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .h1 h1 {
+        font-size: 1.8rem;
+    }
+
+    .sea {
+        padding: 60px 15px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: none;
+        grid-auto-rows: 200px;
+        grid-auto-flow: dense;
+    }
+
+    .sea-1,
+    .sea-2 {
+        grid-row: span 1;
+    }
+
+    .sea-3 {
+        grid-row: span 2;
+    }
+}
+
+@media (max-width: 600px) {
+    .banner {
+        padding: 40px 15px;
+    }
+
+    .banner_container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 220px auto 100px;
+        grid-template-areas:
+            "a a a"
+            "e e e"
+            "b c d";
+        gap: 10px;
+    }
+
+    .banner-1 {
+        max-height: 220px;
+    }
+
+    .banner-2,
+    .banner-3,
+    .banner-4 {
+        max-height: 100px;
+    }
+
+    .h1 {
+        grid-area: e;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 10px 0;
+    }
+
+    .h1 h1 {
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    .sea {
+        padding: 40px 15px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: none;
+        grid-auto-rows: 140px;
+        grid-auto-flow: dense;
+    }
+
+    .sea-1,
+    .sea-2 {
+        grid-row: span 1;
+    }
+
+    .sea-3 {
+        grid-row: span 2;
+    }
 }
