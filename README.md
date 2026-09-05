@@ -48,6 +48,10 @@ CP4-Front-end/
 - Leonardo Teodoro Leitão - RM 569724
 - Gustavo Almeida Lopes do Nascimento - RM 571070
 
+## Link do github pages
+
+https://gustavo-nascimentoo.github.io/CP4-Front-end/
+
 ## 📝 Observações
 
 Este é um projeto acadêmico e foi desenvolvido com foco em prática de layout front-end, design visual e responsividade.
